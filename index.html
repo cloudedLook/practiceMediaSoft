@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>PhoneBook</title>
+
+</head>
+<body> 
+
+	<div class="container">
+		<div id="PhoneBook">
+			<div class="PhoneBookHeader">	
+				<span class="PhoneBookTopIcon">
+					<img src="img/phone.png" alt="logo" width="25" height="25">
+				</span>		
+					<input class="PhoneBookTopSearch" type="text" placeholder="Name">
+				<div>
+				</div>
+			</div> 
+			<main class="PhoneBookMidle" id="PhoneBookMidle">
+				<!-- <div class="CardContact">
+					<div class="IconInCard">
+						<img src="img/contact.png" alt="Контакт" height="55" width="55"></div>
+					<div class="NameContactInCard">
+						<h4>Имя</h4>
+					</div>
+					<div class="ButtonDeleteContact"></div>
+					<div class="ButtonFavoriteContact"><input type="checkbox" class="favorite"></div>
+				</div> -->
+			</main>
+			<div class="PhoneBookBottom">
+				<a class="ButtonAdd"  onclick="Add()">Добавить</a>
+			</div>
+		</div>
+
+
+
+		<div id="AddContact">
+			<div class="AddContactTop">
+				<span class="PhoneBookTopIcon">
+					<img src="img/phone.png" alt="logo" width="25" height="25">
+				</span>		
+				<div class="TextAddContact">
+					<p class="AddContactTopSpan">
+						Add Contact
+					</p>
+				</div>
+			</div>
+
+			<div class="AddContactMidle">
+				<div class="AddInfo AddName">
+					<span class="AddInfoText">Name</span>
+					<input class="inputInfo inputName" id="inputName">
+				</div>
+					
+				<div class="AddInfo AddPhone">
+					<span id="Phone" class="AddInfoText">Phone</span>
+					<input type="tel" class="inputInfo inputPhone" id="inputPhone">
+				</div>
+
+				<div class="AddInfo AddFavorites">
+					<input type="checkbox" class="check" id="checkboxFavorites">
+					<span class="checkboxText">Favorites</span>
+				</div>
+
+			</div>
+
+			<div class="AddContactBottom">
+				<a class="ButtonAddContact ExitAddContact" onclick="Back()">Назад</a>
+				<a class="ButtonAddContact BtnAddContact" onclick="Create()">Добавить</a>
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+	<script src="main.js"></script>
+</body>
+</html>
